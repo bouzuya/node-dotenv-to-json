@@ -1,0 +1,51 @@
+{
+  "name": "dotenv-to-json",
+  "description": "dotenv to json",
+  "version": "0.1.0",
+  "author": {
+    "email": "m@bouzuya.net",
+    "name": "bouzuya",
+    "url": "http://bouzuya.net"
+  },
+  "bin": {
+    "dotenv-to-json": "bin/dotenv-to-json"
+  },
+  "bugs": {
+    "url": "https://github.com/bouzuya/node-dotenv-to-json/issues"
+  },
+  "dependencies": {
+    "dotenv": "^4.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.15",
+    "npm-run-all": "^4.0.2",
+    "rimraf": "^2.6.1",
+    "typescript": "^2.4.2"
+  },
+  "homepage": "https://github.com/bouzuya/node-dotenv-to-json",
+  "keywords": [
+    ".env",
+    "cli",
+    "dotenv",
+    "env",
+    "environment",
+    "json",
+    "variables"
+  ],
+  "lib": [
+    "bin",
+    "index.js"
+  ],
+  "license": "MIT",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bouzuya/node-dotenv-to-json.git"
+  },
+  "scripts": {
+    "build": "tsc",
+    "clean": "rimraf index.js index.d.ts",
+    "prepublish": "npm-run-all -s clean build",
+    "test": "test \"$(echo 'foo=bar' | bin/dotenv-to-json)\" = '{\"foo\":\"bar\"}'"
+  }
+}
