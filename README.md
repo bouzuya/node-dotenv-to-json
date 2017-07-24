@@ -2,6 +2,12 @@
 
 dotenv to json for Node.js
 
+## Installation
+
+```
+$ npm install -g dotenv-to-json
+```
+
 ## Usage
 
 ```
@@ -16,8 +22,8 @@ $ echo 'foo=bar' | dotenv-to-json
 
 [npm-badge-url]: https://badge.fury.io/js/dotenv-to-json.svg
 [npm-url]: https://www.npmjs.com/package/dotenv-to-json
-[travisci-badge-url]: https://travis-ci.org/bouzuya/dotenv-to-json.svg?branch=master
-[travisci-url]: https://travis-ci.org/bouzuya/dotenv-to-json
+[travisci-badge-url]: https://travis-ci.org/bouzuya/node-dotenv-to-json.svg?branch=master
+[travisci-url]: https://travis-ci.org/bouzuya/node-dotenv-to-json
 
 ## License
 
